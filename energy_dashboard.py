@@ -13,8 +13,8 @@ st.markdown('''
 @st.cache_data
 def load_data():
     # url = 'https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-data.csv'
-    df = pd.read_csv("owid-energy-data.csv")
     # df = pd.read_csv(url)
+    df = pd.read_csv("owid-energy-data.csv")
     df = df[df['year'] >= 1990]
     return df
 
