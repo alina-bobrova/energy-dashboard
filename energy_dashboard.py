@@ -22,7 +22,7 @@ df = load_data()
 
 # Фильтры 
 with st.sidebar:
-    st.header('🔧 Фильтры')
+    st.header('Фильтры')
     countries = sorted(df['country'].dropna().unique())
     selected_countries = st.multiselect('Выберите страну(ы)', countries, default=['Russia', 'United States', 'China'])
     selected_years = st.slider('Выберите диапазон лет', 1990, 2022, (2000, 2022), step=1)
